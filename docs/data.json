@@ -1,0 +1,187 @@
+{
+    "project": {
+        "name": "jscow-group",
+        "description": "jsCow - Group - Javascript Component Framework",
+        "version": "1.0.0",
+        "url": ""
+    },
+    "files": {
+        "src\\jscow\\components\\group.js": {
+            "name": "src\\jscow\\components\\group.js",
+            "modules": {},
+            "classes": {
+                "jsCow.res.components.group": 1,
+                "jsCow.res.model.group": 1,
+                "jsCow.res.view.group": 1,
+                "jsCow.res.controller.group": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "jsCow.res.components.group": {
+            "name": "jsCow.res.components.group",
+            "shortname": "jsCow.res.components.group",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\group.js",
+            "line": 1,
+            "description": "jsCow group component is a reusable component used in client side jsCow applications. \nA group is a component, which enables users to group any components.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the main class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.model.group": {
+            "name": "jsCow.res.model.group",
+            "shortname": "jsCow.res.model.group",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\group.js",
+            "line": 39,
+            "description": "Represents the model class of the jsCow group component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the model class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.view.group": {
+            "name": "jsCow.res.view.group",
+            "shortname": "jsCow.res.view.group",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\group.js",
+            "line": 70,
+            "description": "Represents the view class of the jsCow group component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the view class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.controller.group": {
+            "name": "jsCow.res.controller.group",
+            "shortname": "jsCow.res.controller.group",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\group.js",
+            "line": 134,
+            "description": "Represents the controller class of the jsCow group component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the controller class of the component",
+            "is_constructor": 1
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 14,
+            "description": "The init method will be called by initializing the component. \nThe model, view and controller should be set within this method.\n\t\t\n\t\tthis.addController(jsCow.res.controller.group);\n\t\tthis.addModel(jsCow.res.model.group);\n\t\tthis.addView(jsCow.res.view.group);",
+            "itemtype": "method",
+            "name": "init",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 53,
+            "description": "The model init method will only trigger the internal component event 'model.ready'.\nThe event data are the model data.\nDefault listener for this event is registered in the controller of the component. \n\t  \t\n\t  \tthis.trigger(\"model.ready\", this.data);",
+            "itemtype": "method",
+            "name": "init",
+            "class": "jsCow.res.model.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 81,
+            "description": "Objekt for all needed HTML-DOM elements of the component.",
+            "itemtype": "property",
+            "name": "dom",
+            "type": "Object",
+            "default": "{} Object",
+            "class": "jsCow.res.view.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 90,
+            "description": "Represents the html main container of the component.",
+            "itemtype": "property",
+            "name": "dom.main",
+            "type": "Object",
+            "default": "<div/> jQuery DIV object",
+            "class": "jsCow.res.view.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 99,
+            "description": "Represents the inner html container of the component.",
+            "itemtype": "property",
+            "name": "dom.content",
+            "type": "Object",
+            "default": "<div/> jQuery DIV object",
+            "class": "jsCow.res.view.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 111,
+            "description": "The view init method can used to set default view properties.\nBy trigger the event 'model.ready' the controller will trigger the event 'view.init' to call this method.",
+            "itemtype": "method",
+            "name": "init Set all default view properties and trigger the component event 'view.update'.",
+            "class": "jsCow.res.view.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 121,
+            "description": "The view update method will update the complete component view by trigger the event 'view.update' with all available model data.",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.view.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 146,
+            "description": "The controller init method register all needed events within the controller and provides all related event handler.\n\n\t  \t// Code examples\n\t  \tthis.on(\"model.ready\", this.isModelReady);",
+            "itemtype": "method",
+            "name": "init",
+            "class": "jsCow.res.controller.group"
+        },
+        {
+            "file": "src\\jscow\\components\\group.js",
+            "line": 160,
+            "description": "The controller isModelReady method is an event handler and will be triggert by the event 'model.ready' with all available model data.\nIs the model ready the 'view.init' event will triggert by this handler with all available model data again.\n\t  \t\n\t  \tthis.trigger(\n\t\t\t\"view.init\", \n\t\t\te.data\n\t\t);",
+            "itemtype": "method",
+            "name": "isModelReady",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.group"
+        }
+    ],
+    "warnings": []
+}
